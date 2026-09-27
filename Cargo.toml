@@ -1,0 +1,16 @@
+[package]
+name = "imgsort"
+version = "1.0.0"
+edition = "2021"
+description = "Organize photos into folders by EXIF capture date: dry-run, conflict policies, per-year summary. EXIF reader written from scratch. Zero dependencies."
+license = "MIT"
+readme = "README.md"
+keywords = ["exif", "photos", "organization", "cli", "rust"]
+categories = ["command-line-utilities", "multimedia::images"]
+
+[[bin]]
+name = "imgsort"
+path = "src/main.rs"
+
+[profile.release]
+opt-level = 3
